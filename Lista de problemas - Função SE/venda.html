@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>premio</title>
+</head>
+<body>
+    <h1>
+    <div id = "valorVenda"></div>
+    <div id = "valorFixado"></div>
+    <div id = "resultado"></div>  
+    </h1>
+
+    <script>
+    let valorVenda = Number (prompt ("Digite o valor de vendas do funcionario"))
+    let resultado = " "
+
+    valorFixado = 2000
+
+    if (valorVenda >= valorFixado) {
+    resultado = "Ganhou!"    
+    } else {
+    resultado = "Não ganhou!"    
+    }
+
+    document.getElementById("valorVenda").innerHTML = "Valor de venda: " + valorVenda + "R$";
+    document.getElementById("valorFixado").innerHTML = "Valor Fixado: " + valorFixado + "R$";
+    document.getElementById("resultado").innerHTML = resultado;
+    </script>
+</body>
+</html>

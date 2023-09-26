@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data de nascimento</title>
+</head>
+<body>
+    <h1>
+    <div id = "nome1"></div>
+    <div id = "nome2"></div><br>
+    <div id = "resultado"></div>   
+    </h1>
+
+    <script>
+	let nome1 = prompt ("Digite o nome da primeira pessoa")
+        let ano1 = Number (prompt ("Digite o ano que a primeira pessoa nasceu"))
+	let nome2 = prompt ("Digite o nome da segunda pessoa")
+        let ano2 = Number (prompt ("Digite o ano que segunda pessoa nasceu"))
+        let resultado =" ";
+
+	ano1 = 2023 - ano1
+	ano2 = 2023 - ano2
+
+        if (ano1<ano2) {
+        resultado =nome1 + " e a pessoa mais nova com " + ano1 +" anos";
+        } else{
+        resultado =nome2 + " e a pessoa mais nova com " + ano2 +" anos";
+	}
+        
+	document.getElementById("resultado").innerHTML = resultado;
+	document.getElementById("nome1").innerHTML = "Nome: " + nome1 + ", idade: " + ano1;
+	document.getElementById("nome2").innerHTML = "Nome: " + nome2 + ", idade: " + ano2;
+
+    </script>
+</body>
+</html>

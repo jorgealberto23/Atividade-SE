@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diferença</title>
+</head>
+<body>
+    <h1>
+    <div id = "resultado"></div>   
+    </h1>
+
+    <script>
+	let valor1 = Number (prompt ("Digite um valor"))
+	let valor2 = Number (prompt ("Digite outro valor"))
+	let diferenca = " "
+	let resultado = " "
+
+	diferenca = valor1 - valor2
+
+    if (diferenca >= 0) {
+    	resultado ="o valor " + valor1 + " tem " + diferenca + " a mais que " + valor2;    
+    } else {
+        diferenca = diferenca * (-1)
+    	resultado ="o valor " + valor1 + " tem " + diferenca + " a menos que " + valor2;    
+    }
+	document.getElementById("resultado").innerHTML = resultado;
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Impar</title>
+</head>
+<body>
+    <h1>
+    <div id = "resultado"></div>   
+    </h1>
+
+    <script>
+	let numero = Number (prompt ("Digite um numero"))
+	let resultado = " "
+	let final = " "
+
+	final = numero % 2
+
+        if (final==0) {
+        resultado ="o número " + numero + " é par";
+        } else{
+        resultado ="o número " + numero + " é impar";
+	}
+        
+	document.getElementById("resultado").innerHTML = resultado;
+    </script>
+</body>
+</html>

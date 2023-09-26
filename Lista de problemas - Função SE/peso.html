@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso</title>
+</head>
+<body>
+    <h1>
+    <div id = "resultado"></div>
+    </h1>
+
+    <script>
+	let nome1 = prompt ("Digite o nome da primeira pessoa")
+        let peso1 = Number (prompt ("Digite o peso da primeira pessoa"))
+	let nome2 = prompt ("Digite o nome da segunda pessoa")
+        let peso2 = Number (prompt ("Digite o peso da segunda pessoa"))
+        let resultado =" ";
+
+        if (peso1>peso2) {
+        resultado ="o " + nome1 + " e a pessoa mais obesa com " + peso1 +"Kg";
+        } else{
+	
+        resultado ="o " + nome2 + " e a pessoa mais obesa com " + peso2 +"Kg";
+	}
+        
+        document.getElementById("resultado").innerHTML = resultado;
+    </script>
+</body>
+</html>
